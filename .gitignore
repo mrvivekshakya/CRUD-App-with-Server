@@ -1,0 +1,5 @@
+Client/node_modules
+Sever/node_modules
+Client/npm-debug.log*
+Client/yarn-debug.log*
+Client/yarn-error.log*

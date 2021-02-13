@@ -1,0 +1,21 @@
+create database user_node;
+use user_node;
+
+create table tbl_user(
+  id int primary key auto_increment,
+  fname varchar(30),
+  lname varchar(30),
+  email varchar(50),
+  password varchar(50),
+  gender varchar(10),
+  department varchar(100),
+  message varchar(200),
+  dor timestamp
+);
+
+drop table tbl_user;
+
+INSERT INTO TBL_USER(fname,lname,email,password,gender,department,message) values('Vivek','Shakya','mrvivekshakya727@gmail.com','vivek@1234','Male','IT Department','Bhatia Mod Ghaziabad');
+INSERT INTO TBL_USER(fname,lname,email,password,gender,department,message) values('Sahas','Ratan','sahasratan@gmail.com','ratansahas@1234','Male','Phar. Department','Radha Raman Road Mainpuri');
+INSERT INTO TBL_USER(fname,lname,email,password,gender,department,message) values('Deepanshu','Dixit','dixitDeepanshu@gmail.com','dixit@1234','Male','Bio Department','Goshalpur, Mainpuri');
+select * from tbl_user;
